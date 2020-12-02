@@ -1,9 +1,11 @@
 import turtle
 
+name = input("Enter Name")
+age = input("Enter Age")
 
 
 bg = turtle.Screen()
-turtle.title("Happy Birthday Boss")
+turtle.title("Happy Birthday "+name)
 bg.bgcolor("black")
 
 turtle.penup()
@@ -196,16 +198,6 @@ for i in range(36):
       turtle.right(10)
       square(40, 90)
 
-#################topper
-turtle.penup()
-turtle.goto(-300,-100)
-turtle.pendown()
-turtle.write("TOPPER",font=('Courier', 30, 'italic'))
-
-turtle.penup()
-turtle.goto(170,-100)
-turtle.pendown()
-turtle.write("NERD",font=('Courier', 30, 'italic'))
 
 
 # Happy Birthday message
@@ -214,7 +206,8 @@ turtle.penup()
 turtle.goto(-280,170 )
 turtle.color("pink")
 turtle.pendown()
-turtle.write("Happy Birthday POORNASHREE !",font=('Courier', 30, 'italic'))
+wish = "Happy Birthday "+name+" !"
+turtle.write(wish,font=('Courier', 30, 'italic'))
 
 
 turtle.penup()
@@ -264,5 +257,3 @@ turtle.goto(-280,-270 )
 turtle.color("black")
 turtle.pendown()
 turtle.write("",font=('Courier', 30, 'italic'))
-
-turtle.mainloop()
